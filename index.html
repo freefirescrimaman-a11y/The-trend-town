@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#b51224"><meta name="description" content="THE TREND TOWN — Wear the Trend. Own the Style. Men's streetwear in Nepal.">
+<title>THE TREND TOWN | Wear the Trend. Own the Style.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="mobile-header">
+  <button class="brand" id="brandTop" aria-label="Home"><img class="brand-logo" src="assets/the-trend-town-logo.png" alt="The Trend Town logo"><span>THE TREND TOWN</span></button>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+</header>
+<aside class="sidebar" id="sidebar">
+  <button class="brand desktop-brand" id="brandSide"><img class="brand-logo" src="assets/the-trend-town-logo.png" alt="The Trend Town logo"><span>THE TREND TOWN</span></button>
+  <div class="side-label">DISCOVER</div>
+  <button class="nav-link active" data-page="home"><span>⌂</span> Home</button>
+  <button class="nav-link" data-page="products"><span>▦</span> All Products</button>
+  <button class="nav-link" data-page="contact"><span>◎</span> Contact Us</button>
+  <div class="side-bottom"><p>WEAR THE TREND.<br>OWN THE STYLE.</p><small>BHARAHIWA, NEPAL</small></div>
+</aside>
+<main class="main">
+  <section id="homePage" class="page active">
+    <div class="brand-banner"><p class="eyebrow">YOUR STYLE. YOUR RULES.</p><h1>THE TREND TOWN</h1><p>Wear the Trend. Own the Style.</p></div>
+    <div class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="Search products..." aria-label="Search products"></div>
+    <section class="category-section"><div class="section-heading"><div><p class="eyebrow">FIND YOUR FIT</p><h2>SHOP BY CATEGORY</h2></div></div><div class="category-grid" id="categoryGrid"></div></section>
+    <section class="product-section"><div class="section-heading"><div><p class="eyebrow">FRESH DROPS</p><h2>LATEST PRODUCTS</h2></div><button class="text-link" data-page="products">VIEW ALL →</button></div><div class="product-grid" id="latestGrid"></div></section>
+    <section class="promo-strip"><div><p class="eyebrow">THE TREND TOWN</p><h2>GOOD STYLE SPEAKS LOUDER.</h2><p>Explore the latest men's fashion and streetwear.</p></div><button class="red-button" data-page="products">EXPLORE COLLECTION</button></section>
+    <section class="special-section"><div class="section-heading"><div><p class="eyebrow">CURATED FOR YOU</p><h2>FEATURED COLLECTIONS</h2></div></div><div class="feature-grid"><button data-filter="New Arrivals">NEW ARRIVALS <span>↗</span></button><button data-filter="Best Sellers">BEST SELLERS <span>↗</span></button><button data-filter="Special Offers">SPECIAL OFFERS <span>↗</span></button></div></section>
+  </section>
+  <section id="productsPage" class="page">
+    <div class="page-title"><p class="eyebrow">THE COLLECTION</p><h1>ALL PRODUCTS</h1><p>Find your next everyday favourite.</p></div>
+    <div class="search-wrap"><span>⌕</span><input id="productSearch" type="search" placeholder="Search products..." aria-label="Search products"></div>
+    <div class="filter-row" id="filterRow"></div><div class="product-grid" id="allGrid"></div>
+  </section>
+  <section id="contactPage" class="page">
+    <div class="page-title"><p class="eyebrow">LET'S CONNECT</p><h1>CONTACT US</h1><p>Questions about a product? Message us directly.</p></div>
+    <div class="contact-layout"><div class="contact-card"><p class="eyebrow">VISIT OUR STORE</p><h2>THE TREND TOWN</h2><p>Milan Chowk, Bhairahawa, Nepal</p><a class="red-button inline-button" target="_blank" rel="noopener" href="https://maps.app.goo.gl/rCU9JBAitUFibdrn9?g_st=ac">OPEN GOOGLE MAPS ↗</a><h3>CALL / WHATSAPP</h3><p><a href="tel:+9779709182768">+977 9709182768</a></p><p><a href="tel:+9779802822384">+977 9802822384</a></p><p><a href="tel:+9779748797792">+977 9748797792</a></p><h3>FOLLOW THE TREND</h3><p><a target="_blank" rel="noopener" href="https://instagram.com/thetrendtown_official">Instagram · @thetrendtown_official ↗</a></p><p><a target="_blank" rel="noopener" href="https://tiktok.com/@thetrendtown">TikTok · @thetrendtown ↗</a></p></div><div class="map-card"><div class="map-pin">⌖</div><h2>FIND US IN BHAIRAHAWA</h2><p>Milan Chowk, Bhairahawa, Nepal</p><a target="_blank" rel="noopener" href="https://maps.app.goo.gl/rCU9JBAitUFibdrn9?g_st=ac">View location on Google Maps →</a></div></div>
+    <div class="delivery-note"><h2>DELIVERY AVAILABLE</h2><p>Local delivery in Bhairahawa · Home delivery across Nepal</p></div>
+  </section>
+  <footer class="footer"><div><strong>THE TREND TOWN</strong><p>Wear the Trend. Own the Style.</p></div><div class="footer-links"><a data-page="home">Home</a><a data-page="products">All Products</a><a data-page="contact">Contact Us</a><a href="https://instagram.com/thetrendtown_official" target="_blank" rel="noopener">Instagram</a><a href="https://tiktok.com/@thetrendtown" target="_blank" rel="noopener">TikTok</a></div><p class="copyright">© <span id="year"></span> THE TREND TOWN. All rights reserved.</p></footer>
+</main>
+<nav class="bottom-nav"><button class="active" data-page="home"><b>⌂</b>Home</button><button data-page="products"><b>▦</b>Products</button><button data-page="contact"><b>◎</b>Contact</button><a href="https://wa.me/9779709182768" target="_blank" rel="noopener"><b>◉</b>WhatsApp</a></nav>
+<a class="floating-wa" href="https://wa.me/9779709182768" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">◉</a>
+<button class="admin-trigger" id="adminTrigger" title="Admin">⚙</button>
+<div class="modal hidden" id="adminModal"><div class="modal-panel"><button class="modal-close" id="closeAdmin">×</button><div id="loginView"><p class="eyebrow">STORE MANAGEMENT</p><h2>ADMIN LOGIN</h2><p class="muted">Create your private demo login on first use.</p><form id="loginForm"><label>Username<input id="adminUser" required autocomplete="username"></label><label>Password<input id="adminPass" type="password" required minlength="6" autocomplete="current-password"></label><button class="red-button full-button">CONTINUE</button></form><small class="warning">Demo mode: this browser-only login is not secure for a public live store. See README before deployment.</small></div><div id="adminView" class="hidden"><p class="eyebrow">STORE MANAGEMENT</p><h2>PRODUCT ADMIN</h2><div class="admin-actions"><button class="red-button" id="addProduct">+ ADD PRODUCT</button><button class="outline-button" id="logout">LOG OUT</button></div><form id="productForm" class="hidden"><input type="hidden" id="editId"><label>Product name<input id="productName" required></label><label>Category<select id="productCategory"><option>T-Shirts</option><option>Shirts</option><option>Jeans & Trousers</option><option>Hoodies & Jackets</option><option>Shoes & Sneakers</option></select></label><label>Product photo<input id="productImage" type="file" accept="image/*"></label><label>Short description<textarea id="productDescription" rows="2"></textarea></label><label class="check"><input id="productNew" type="checkbox"> New Arrivals</label><label class="check"><input id="productBest" type="checkbox"> Best Sellers</label><label class="check"><input id="productOffer" type="checkbox"> Special Offers</label><button class="red-button full-button">SAVE PRODUCT</button></form><div id="adminProducts" class="admin-list"></div><p class="warning">Products are saved in this browser only in this demo. A shared online admin/database must be connected before launch.</p></div></div></div>
+<script src="app.js"></script>
+</body></html>
